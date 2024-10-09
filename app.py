@@ -22,7 +22,6 @@ model = genai.GenerativeModel(
     model_name="gemini-1.5-flash-8b",
     generation_config=generation_config,
 )
-
 # Initialize a chat session
 chat_session = model.start_chat(history=[])
 # Streamlit app setup
