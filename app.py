@@ -1,4 +1,4 @@
-  import os
+import os
 import streamlit as st
 import google.generativeai as genai
 
@@ -22,10 +22,8 @@ model = genai.GenerativeModel(
     model_name="gemini-1.5-flash-8b",
     generation_config=generation_config,
 )
-
 # Initialize a chat session
 chat_session = model.start_chat(history=[])
-
 # Streamlit app setup
 st.title("Gemini 1.5 Chatbot")
 st.write("Ask anything, and the Gemini 1.5 model will respond!")
