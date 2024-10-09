@@ -25,7 +25,6 @@ model = genai.GenerativeModel(
 
 # Initialize a chat session
 chat_session = model.start_chat(history=[])
-
 # Streamlit app setup
 st.title("Gemini 1.5 Chatbot")
 st.write("Ask anything, and the Gemini 1.5 model will respond!")
